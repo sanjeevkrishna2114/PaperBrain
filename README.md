@@ -54,10 +54,10 @@ graph TD
 ---
 
 ## Team Members
+- Gaurav Mahesh
 - Sanjeev Krishna  
 - Somasekhara S  
 - Bharat K  
-- Shivsrijit Verma  
-- Gaurav Mahesh
+- Shivsrijit Verma
 
 
