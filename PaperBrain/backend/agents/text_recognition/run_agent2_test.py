@@ -26,7 +26,7 @@ os.makedirs(FINAL_EVALUATIONS_FOLDER, exist_ok=True)
 # Define the server to launch (Agent 2)
 agent_2_server = StdioServerParameters(
     command="python",
-    args=["ocr_server.py"] 
+    args=["trocr_server.py"]
 )
 
 async def run_batch_ocr():

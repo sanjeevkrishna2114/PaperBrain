@@ -11,3 +11,6 @@ easyocr
 google-generativeai
 mcp
 python-dotenv
+transformers
+torch
+Pillow
