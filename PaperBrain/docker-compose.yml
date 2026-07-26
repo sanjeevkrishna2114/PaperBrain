@@ -1,0 +1,26 @@
+
+services:
+  pb-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: pb-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend/uploads:/app/uploads
+      - ./backend/agents/evaluator/inputs:/app/agents/evaluator/inputs
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped
+
+  pb-frontend:
+    build:
+      context: ./frontend/paperbrain
+      dockerfile: Dockerfile
+    container_name: pb-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - pb-backend
+    restart: unless-stopped

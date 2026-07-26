@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+uploads/
+debug_crops/
+temp/
+results/
+agent1_output/
+aligned_outputs/
+evaluation_results/
