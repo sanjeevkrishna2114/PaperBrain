@@ -41,6 +41,7 @@ class PipelineController:
         os.makedirs(self.evaluator_related_docs_dir, exist_ok=True)
         os.makedirs(os.path.join(self.evaluator_dir, "temp"), exist_ok=True)
         os.makedirs(self.preprocessor_inputs_dir, exist_ok=True)
+        os.makedirs(self.preprocessor_templates_dir, exist_ok=True)
         os.makedirs(self.preprocessor_outputs_dir, exist_ok=True)
         os.makedirs(self.text_recognition_outputs_dir, exist_ok=True)
 
